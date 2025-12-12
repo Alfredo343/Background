@@ -16,7 +16,9 @@ bool Invalido(long long n) {
         string bloque = s.substr(0, len);
         string repetido;
         for (int i = 0; i < L / len; ++i) repetido += bloque;
-        if (repetido == s) return true;
+        if (repetido == s){
+            return true;
+        }
     }
     return false;
 }
